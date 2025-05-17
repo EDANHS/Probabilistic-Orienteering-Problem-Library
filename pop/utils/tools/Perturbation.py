@@ -1,4 +1,4 @@
-from pop.utils.environments import AbstractEnvironment
+from pop.environment import AbstractEnvironment
 from pop.utils import POP_State
 
 class Perturbation:
