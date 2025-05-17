@@ -20,6 +20,9 @@ def build_global_vector(current_state: POP_State,
         final_node.x / max_coord, final_node.y / max_coord,
     ]
 
+def build_target_vector(chosen_action, size):
+    return [1.0 if i == chosen_action else 0.0 for i in range(size)]
+
 def build_step_features(instance: POP_Instance, 
                         visited: list, 
                         max_coord: float, 
