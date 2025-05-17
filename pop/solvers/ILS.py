@@ -2,7 +2,7 @@ from pop.solvers.SingleAgentSolver import SingleAgentSolver
 from pop.utils import POP_State
 from pop.utils.tools import Perturbation
 from pop.utils.tools import DefaultAcceptanceCriterion
-from Solver import Solver
+from pop.solvers.Solver import Solver
 from copy import deepcopy
 
 class ILS(Solver):

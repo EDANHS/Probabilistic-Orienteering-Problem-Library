@@ -1,6 +1,6 @@
 from pop.environment import AbstractEnvironment
 from pop.utils import POP_State
-from Solver import Solver
+from pop.solvers.Solver import Solver
 from copy import deepcopy
 
 class TabuSearchSolver(Solver):

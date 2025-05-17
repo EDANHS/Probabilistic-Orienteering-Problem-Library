@@ -1,5 +1,5 @@
 from copy import deepcopy
-from Solver import Solver
+from pop.solvers.Solver import Solver
 from pop.utils import POP_State
 
 class SingleAgentSolver(Solver):

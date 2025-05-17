@@ -1,7 +1,7 @@
 from copy import deepcopy
 from pop.utils import POP_State
 from pop.utils.tools import build_global_vector, build_step_features
-from Solver import Solver
+from pop.solvers.Solver import Solver
 from keras.api.models import Model
 import numpy as np
 import tensorflow as tf
