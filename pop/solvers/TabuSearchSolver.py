@@ -3,7 +3,7 @@ from pop.utils import POP_State
 from Solver import Solver
 from copy import deepcopy
 
-class TabuSearchAgent(Solver):
+class TabuSearchSolver(Solver):
   def __init__(self, 
                environment: AbstractEnvironment, 
                tabu_maxsize: int = 10, 
