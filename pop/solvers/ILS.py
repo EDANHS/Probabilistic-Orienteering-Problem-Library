@@ -19,7 +19,7 @@ class ILS(Solver):
             state,
             **kwargs) -> POP_State:
     
-    max_iterations = kwargs["max_iterations"]
+    max_iterations = kwargs.get("max_iterations", 1000)
 
     current_solution, *_ = self.local_search.solve(state)
 
