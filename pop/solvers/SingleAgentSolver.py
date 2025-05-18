@@ -8,7 +8,7 @@ class SingleAgentSolver(Solver):
         self.agent = agent
 
     def solve(self, state, **kwargs) -> POP_State:
-        track_best_state = kwargs.get("track_best_state", True)
+        track_best_state = kwargs.get("track_best_state", False)
         max_iterations = kwargs.get("max_iterations", 1000)
 
         best_state = None
