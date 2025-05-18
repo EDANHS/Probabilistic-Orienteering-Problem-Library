@@ -23,7 +23,7 @@ class TabuSearchSolver(Solver):
     self.tabu_list.clear()
     self.iter = 0
 
-  def __action_policy(self, 
+  def action_policy(self, 
                     state: POP_State, environment):
     # Política de selección de la mejor acción (movimiento) en la vecindad actual
     best_score = float('-inf') 
