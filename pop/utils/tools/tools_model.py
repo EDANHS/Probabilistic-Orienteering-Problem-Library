@@ -34,6 +34,6 @@ def build_step_features(instance: POP_Instance,
             node.y / max_coord,
             node.prize / max_prize,
             node.pi,
-            1.0 if node_id in visited else 0.0
+            1.0 if node_id in visited else -1.0
         ])
     return features
