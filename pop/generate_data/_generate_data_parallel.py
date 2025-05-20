@@ -38,7 +38,9 @@ def process_solution(instance, final_state, max_coord, max_prize):
 
 def generate_one_instance(args: Args) -> Tuple[List, List]:
     size, max_coord, max_prize, solver_func = args
-    instance = generate_POP_instance(num_nodes=size)
+    instance = generate_POP_instance(num_nodes=size,
+                                     coord_range_max=max_coord,
+                                     prize_max=max_prize)
     final_state = solver_func(instance)
     return process_solution(instance, final_state, max_coord, max_prize)
 
