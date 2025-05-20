@@ -35,6 +35,8 @@ def generate_POP_instance(
 
         prizes[origin] = 0.0
         pis[origin] = 1.0
+        prizes[destination] = 0.0
+        pis[destination] = 1.0
 
         temp_instance = POP_Instance(x=x, y=y, prizes=prizes, pis=pis,
                                      d_max=float('inf'), origin=origin, destination=destination)
